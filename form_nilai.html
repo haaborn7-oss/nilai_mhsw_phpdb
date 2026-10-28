@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Nilai Mahasiswa</title>
+</head>
+<body>
+    <h2>Form Input Nilai Mahasiswa</h2>
+
+    <form action="olah_nilai.php" method="POST">
+
+        <label for="nim">NIM:</label><br>
+        <input type="text" id="nim" name="nim"
+               minlength="10" maxlength="10"
+               pattern="[0-9]{10}"
+               title="NIM harus terdiri dari tepat 10 angka"
+               required><br><br>
+
+        <label for="nama_lengkap">Nama Lengkap:</label><br>
+        <input type="text" id="nama_lengkap" name="nama_lengkap"
+               required><br><br>
+
+        <label for="nilai_akhir">Nilai Akhir:</label><br>
+        <input type="number" id="nilai_akhir" name="nilai_akhir"
+               min="0" max="100" step="0.01" required><br><br>
+
+        <input type="submit" value="Simpan">
+
+    </form>
+</body>
+</html>
